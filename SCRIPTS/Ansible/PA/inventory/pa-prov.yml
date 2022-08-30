@@ -9,6 +9,17 @@
     - paloaltonetworks.panos
 
   tasks: 
+    - name: Grab auth creds
+      include_vars:  'palo.yml'
+      no_log: 'yes'
+
+    - name: Add Host creds
+      include_vars:  'PA-1.yml'
+      no_log: 'yes'
+
+    - name: Add Host creds
+      include_vars:  'PA-2.yml'
+      no_log: 'yes'  
 
     - name: Set Hostname 
       panos_mgtconfig: 
@@ -61,23 +72,6 @@
         mode: 'layer3'
         enable_dhcp: false
         ip: ['10.10.10.1/24']
-
-    - name: Create Server Objects
-      panos_address_object:
-        provider: '{{ palo_provider }}'
-        name:  "{{ item['name'] }}"
-        value: "{{ item['ip'] }}"
-        description: "{{ item['description'] }}"
-      loop: "{{ servers }}"
-
-# Enable BGP 
-
-    - name: create DMZ zone on a firewall
-      panos_zone:
-        provider: '{{ palo_provider }}'
-        zone: 'dmz'
-        mode: 'layer3'
-#        zone_profile: 'strict'
 
     - name: Commit 
       panos_commit_firewall:

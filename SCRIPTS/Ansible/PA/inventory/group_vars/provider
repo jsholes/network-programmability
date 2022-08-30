@@ -1,0 +1,16 @@
+---
+-hosts: localhost
+connection:local
+gather_facts:False
+
+vars:
+provider:
+ ip_address: '123.123.123.123'
+ username: 'superuser'
+ password: 'SuperSecretPassword'
+
+
+
+palo_provider:
+  api_key: LUFRPT1vcmFQNVpFTUpTeUVQOWdrVDZJZkszc1d6dW89d1FOQlRCZTgvUFRyL0laNHBhKytlbHVGSEVCWGlOQkpCRDlIdERGOUxjWGpTWEVDVHNwMVhXd2o3TmdjdlZ5ZQ==
+  ip_address: "{{ ansible_host }}"

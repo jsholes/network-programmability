@@ -1,10 +1,10 @@
 ---
 
-configs_dir: ./configs/
-
 palo_provider:
-  api_key: LUFRPT1vcmFQNVpFTUpTeUVQOWdrVDZJZkszc1d6dW89d1FOQlRCZTgvUFRyL0laNHBhKytlbHVGSEVCWGlOQkpCRDlIdERGOUxjWGpTWEVDVHNwMVhXd2o3TmdjdlZ5ZQ==
+  #api_key: LUFRPT1vcmFQNVpFTUpTeUVQOWdrVDZJZkszc1d6dW89d1FOQlRCZTgvUFRyL0laNHBhKytlbHVGSEVCWGlOQkpCRDlIdERGOUxjWGpTWEVDVHNwMVhXd2o3TmdjdlZ5ZQ==
   ip_address: "{{ ansible_host }}"
+  username: 'admin'
+  password: 'NQ9mbXWC7JCfpFNpr'
 
 adminusername: admin
 adminpassword: NQ9mbXWC7JCfpFNpr
