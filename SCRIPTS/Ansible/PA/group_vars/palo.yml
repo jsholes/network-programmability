@@ -3,11 +3,11 @@
 configs_dir: ./configs/
 
 palo_provider:
-  api_key: LUFRPT1jRm1nUmJib2NHbmF6a21ReFc3M21aemk0eUE9SkFla3ZuZ3RKNHdnOFl6bkx5TzFJNHdMOFV1Y1Y1YkZPVGF3MEk2NmJldGFVV2dmYmIyV3ZDdGdLRFQ4ay9sZg==
+  api_key: LUFRPT1vcmFQNVpFTUpTeUVQOWdrVDZJZkszc1d6dW89d1FOQlRCZTgvUFRyL0laNHBhKytlbHVGSEVCWGlOQkpCRDlIdERGOUxjWGpTWEVDVHNwMVhXd2o3TmdjdlZ5ZQ==
   ip_address: "{{ ansible_host }}"
 
-adminusername: roger
-adminpassword: palo123
+adminusername: admin
+adminpassword: NQ9mbXWC7JCfpFNpr
 
 ansible_ssh_user: admin
 ansible_ssh_pass: Cisco123
